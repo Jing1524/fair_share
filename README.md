@@ -1,4 +1,4 @@
-## Documentation
+## Issues
 
     login page/onboarding
 
@@ -12,8 +12,6 @@
         • might be a good idea to refactor the steps into it's own file
         • onBoarding context could be a separate file as well to keep the code clean
         • add shareholder modal should disable the ability to close when click on outside of the modal
-
-    - can a shareholder have more than single digit share? -> number of share option is wonky
 
     - should FairShare logo have the ability navigate back to home page?
 
@@ -29,7 +27,14 @@ ShareholderStep
 
     - and the newShareholder is not being set correctly in the shareholderStep-> Add Shareholder
 
-dashboard
+    - update/add grant modal
+
+        • when adding number of shares, the input field is only allowing user to type in certain number
+
+        • with the added value per share input field, currently not able to delete the initial value 0, this applies to
+          the modal that's on the shareholder page
+
+dashboard Page
 
     - should have logout button where direct the user back to home page
 
@@ -37,6 +42,14 @@ dashboard
       and the only way that i'm able to get back to the home page is by clearing the localstorage. and bacuse the data was being
       cleared, there is no recode of the user data.(stucked on this issue)
 
+## Current state
+
+    - Added form validation during the onboarding process
+
+    - Implemented share type, and able to view share type on the pie chart in dashboard. Also showing the share type for each shareholder on shreholder page
+
+    - Implemented share value, added share value field in company model, update the shareValue with reducer, and setting the updated
+    share value in local database. Allows user to set value per share during the onboarding stage(Add grant modal), also user can update the value in the shareholder page(add grant modal). Also displaying the total value per share type on the shareholder page, and marketcap on dashboard. Added ability for user to view equity value in pie chart.
 
 # Fair Share
 
@@ -157,4 +170,5 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 # Fair-share
 
 # Fair-share
+
 # fair_share
