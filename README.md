@@ -1,6 +1,6 @@
 ## Issues
 
-    login page/onboarding
+login page/onboarding
 
     - subtitle is not readable, center the discription might be better
 
@@ -13,19 +13,19 @@
         • onBoarding context could be a separate file as well to keep the code clean
         • add shareholder modal should disable the ability to close when click on outside of the modal
 
-    - should FairShare logo have the ability navigate back to home page?
+    - should FairShare logo have the ability to navigate back to home page?
 
-    - when user didn't fill out the grants info -> shouldn't be allowed to add grant?
+    - when user didn't fill out the grants info -> it shouldn't be allowed to add grant?
 
-    - cant not navigate to previous step in the onboarding process
+    - cannot navigate to previous step in the onboarding process
 
 ShareholderStep
 
     - should user be able to chose which shareholder to add grant for?
 
-    - currently when i add multiple shareholder, and next button direct use back to home page
+    - currently when i add multiple shareholders, the next button directs user back to home page
 
-    - and the newShareholder is not being set correctly in the shareholderStep-> Add Shareholder
+    - the newShareholder is not being set correctly in the shareholderStep-> Add Shareholder
 
     - update/add grant modal
 
@@ -36,17 +36,17 @@ ShareholderStep
 
 dashboard Page
 
-    - should have logout button where direct the user back to home page
+    - should have logout button that directs the user back to home page
 
       current behavior: logout button is not navigating the user back to home page, and url is stuck on "/dashboard/investor".
-      and the only way that i'm able to get back to the home page is by clearing the localstorage. and bacuse the data was being
-      cleared, there is no recode of the user data.(stucked on this issue)
+      and the only way that i'm able to get back to the home page is by clearing the localstorage. and because the data was being
+      cleared, there is no record of the user data.(stuck on this issue)
 
 ## Current state
 
     - Added form validation during the onboarding process
 
-    - Implemented share type, and able to view share type on the pie chart in dashboard. Also showing the share type for each shareholder on shreholder page
+    - Implemented share type, and able to view share type on the pie chart in dashboard. Also showing the share type for each shareholder on shareholder page
 
     - Implemented share value, added share value field in company model, update the shareValue with reducer, and setting the updated
     share value in local database. Allows user to set value per share during the onboarding stage(Add grant modal), also user can update the value in the shareholder page(add grant modal). Also displaying the total value per share type on the shareholder page, and marketcap on dashboard. Added ability for user to view equity value in pie chart.
